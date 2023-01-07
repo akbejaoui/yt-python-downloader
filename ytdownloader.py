@@ -46,7 +46,7 @@ def downloadVideo(resolution, yt):
     if video:
         video.download(path_to_download_folder)
 
-print ('yt video link')
+print ('Enter youtube video link: ')
 link = input()
 yt = YouTube(link, on_progress_callback=onProgress)
 printVideoData(yt)
